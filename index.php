@@ -6,7 +6,7 @@ header('Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS');
 header("Access-Control-Allow-Headers: X-Requested-With");
 header('Content-Type: application/json');
 
-$version="1.0";
+$version = "1.0";
 
 // Inicio
 if (isset($_SERVER['HTTP_ACTION'])) {
@@ -14,7 +14,7 @@ if (isset($_SERVER['HTTP_ACTION'])) {
     switch (strtolower($accion)) {
         case strtolower("getBackendHostname"):
             $response['code'] = "200";
-            $response['hostname'] = $_SERVER["HTTP_HOST"]." running version ".$version;
+            $response['hostname'] = $_SERVER["HTTP_HOST"] . " running version " . $version;
             echo json_encode($response);
             break;;;
         default:
