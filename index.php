@@ -6,7 +6,7 @@ header('Access-Control-Allow-Methods: PUT, GET, POST, DELETE, OPTIONS');
 header("Access-Control-Allow-Headers: X-Requested-With");
 header('Content-Type: application/json');
 
-$version = "1.0";
+$version = "1.1beta";
 
 // Inicio
 if (isset($_SERVER['HTTP_ACTION'])) {
